@@ -1,0 +1,489 @@
+:root {
+  --primary-bg-color: #1b1b1b;
+  --sidebar-bg-color: #292929;
+  --text-color: antiquewhite;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-bg-color);
+  color: var(--text-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.1rem;
+  scroll-behavior: smooth;
+}
+
+.active {
+  border-bottom: 1px solid goldenrod;
+  padding-bottom: 7px;
+  color: goldenrod;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+ul {
+  background: var(--sidebar-bg-color);
+}
+
+ul li {
+  list-style: none;
+  background: var(--sidebar-bg-color);
+  margin-bottom: 10px;
+}
+
+#menu ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  background: var(--sidebar-bg-color);
+}
+
+#menu a:hover {
+  border-bottom: 1px solid goldenrod;
+  padding-bottom: 7px;
+  color: goldenrod;
+}
+
+nav {
+  z-index: 1;
+  height: 15vh;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--sidebar-bg-color);
+}
+
+#menu li {
+  display: inline-block;
+  position: relative;
+  margin-right: 20px;
+}
+
+#logo {
+  height: 15vh;
+  width: 15vw;
+  background-image: url(images/logo.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--sidebar-bg-color);
+}
+
+#role {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--sidebar-bg-color);
+}
+
+#role span {
+  background-color: var(--sidebar-bg-color);
+}
+
+#logoRole {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--sidebar-bg-color);
+}
+
+section.side-bar {
+  height: 100vh;
+  width: 50%;
+  background: var(--sidebar-bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  transition: 1s ease;
+  z-index: 2;
+}
+
+section.side-bar ul {
+  background: var(--sidebar-bg-color);
+  background-color: var(--sidebar-bg-color);
+}
+section.side-bar li {
+  background: var(--sidebar-bg-color);
+  background-color: var(--sidebar-bg-color);
+  border: none;
+  padding: 10px;
+  transition: 0.1s ease;
+}
+section.side-bar li:hover {
+  margin-left: 20px;
+}
+
+section.side-bar a:hover {
+  border-bottom: 1px solid darkgoldenrod;
+}
+section.side-bar a {
+  background: var(--sidebar-bg-color);
+  background-color: var(--sidebar-bg-color);
+  text-decoration: none;
+}
+
+.side-bar-hide {
+  transform: translateX(-500px);
+}
+
+.hamburger {
+  background-color: var(--sidebar-bg-color);
+  color: var(--text-color);
+}
+
+/*Section for the projects*/
+#Work {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 10rem;
+}
+
+#photos, #films {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 10rem;
+}
+
+#showreel{
+  background-image: url("/images/reel.Still001.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#nescafe{
+  background-image: url("/images/nescafe.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#kidnapping{
+  background-image: url("/images/TheKidnapping.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#betrayal{
+  background-image: url("/images/TheBetrayal.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#pendrive{
+  background-image: url("/images/ThePenDrive.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#code{
+  background-image: url("/images/TheCode.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#wwtawwtal{
+  background-image: url("/images/wwtawwtal.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#clinic{
+  background-image: url("/images/TheClinic.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#heartbreak{
+  background-image: url("/images/TheHeartbreak.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#breakfast{
+  background-image: url("/images/TheBreakfast.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#About {
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 10rem;
+}
+
+div.project-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--text-color);
+  min-height: 40vh;
+  min-width: 40vw;
+  margin: 20px;
+  transition: 1s ease;
+  transition-property: all;
+  background-image: url("images/events.jpg");
+}
+
+div.photo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--text-color);
+  min-height: 40vh;
+  min-width: 40vw;
+  margin: 20px;
+  transition: 1s ease;
+  transition-property: all;
+  background-position: top;
+  background-repeat: no-repeat; 
+  background-size: contain;
+}
+
+.about-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--text-color);
+  min-height: 40vh;
+  max-width: 40vw;
+  margin: 20px;
+  padding: 30px;
+  font-size: initial;
+  transition: 1s ease;
+  transition-property: all;
+  background-image: url("images/events.jpg");
+}
+
+
+.my-image {
+  background-image: url("images/logo.png");
+  background-repeat: no-repeat;
+  background-position:bottom;
+  background-size: cover;
+  height: 20vh;
+  width: 20vw;
+}
+
+.intro-content {
+  text-align: justify;
+}
+
+#contact {
+  display: flex;
+  justify-content: center;
+}
+
+div.project-title {
+  background-color: darkgoldenrod;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh;
+  min-width: 40vw;
+  transition: 0.2s ease;
+  transition-property: all;
+  opacity: 40%;
+  font-size: 1rem;
+  word-wrap: break-word;
+}
+
+div.project-container:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+  background-color: darkgoldenrod;
+  font-size: xx-large;
+}
+
+div.photo-container:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+  background-color: darkgoldenrod;
+  font-size: xx-large;
+}
+
+
+.about-div:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+  background-color: darkgoldenrod;
+}
+
+section#videoreel{
+  height:100vh;
+  width:100vw;
+  background: goldenrod;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index:10;
+  padding:0;
+  display:grid;
+  place-items:center;
+ display:none;
+}
+
+section#videoreel .container{
+  width:70vw;
+  box-shadow:0 2rem 3rem rgba(0,0,0,0.5); 
+}
+
+section#videoreel .container iframe{
+  width:100% !important;
+  height: 70vh !important;
+
+}
+
+section#PhotoViewer{
+  height:100vh;
+  width:100vw;
+  background: goldenrod;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index:10;
+  padding:0;
+  display:grid;
+  place-items:center;
+ display:none;
+}
+
+section#PhotoViewer .container{
+  width:70vw;
+  box-shadow:0 2rem 3rem rgba(0,0,0,0.5); 
+}
+
+section#PhotoViewer .container img{
+  width:100% !important;
+  height: 70vh !important;
+  object-fit: contain;
+
+}
+
+/*Footer Section*/
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  width: 100%;
+  background-color: var(--primary-bg-color);
+  color: var(--text-color);
+  margin-top: auto;
+}
+
+footer > span {
+  background-color: var(--primary-bg-color);
+}
+
+/* For Responsiveness*/
+@media screen and (max-width: 500px) {
+  .hamburger {
+    display: block;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #logo {
+    width: 26vw;
+  }
+
+  section.side-bar {
+    width: 70%;
+  }
+
+  div.project-title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #logo {
+    width: 26vw;
+  }
+
+  * {
+    font-size: 0.95rem;
+  }
+
+  #Work div {
+    min-height: 20vh;
+    min-width: 60vw;
+  }
+
+  #photos div {
+    min-height: 20vh;
+    min-width: 60vw;
+  }
+
+  #films div {
+    min-height: 20vh;
+    min-width: 60vw;
+  }
+
+  div.project-title {
+    font-size: 2rem;
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+  #Work div {
+    min-height: 25vh;
+    min-width: 60vw;
+  }  
+  #photos div {
+    min-height: 25vh;
+    min-width: 60vw;
+  }  
+  #films div {
+    min-height: 25vh;
+    min-width: 60vw;
+  }  
+}
+
+@media screen and (min-width: 500px) {
+  section.side-bar {
+    display: none;
+  }
+
+  .hamburger,
+  .close {
+    display: none;
+  }
+}
