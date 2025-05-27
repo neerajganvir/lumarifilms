@@ -145,6 +145,19 @@ section.side-bar a {
   color: var(--text-color);
 }
 
+/*Section for the about page*/
+.intro-content p {
+  background-color: transparent;
+  font-weight: 300;
+  font-size:1rem;
+}
+.intro-content strong {
+  background-color: transparent;
+  font-weight: bold;
+  font-size:1rem;
+  color:gold;
+}
+
 /*Section for the projects*/
 #Work {
   min-height: 100vh;
