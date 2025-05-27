@@ -257,6 +257,15 @@ section.side-bar a {
   padding-top: 10rem;
 }
 
+#AboutService, #PreProduction, #Production, #PostProduction {
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 div.project-container {
   display: flex;
   justify-content: center;
@@ -286,6 +295,21 @@ div.photo-container {
 }
 
 .about-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--text-color);
+  min-height: 40vh;
+  max-width: 40vw;
+  margin: 20px;
+  padding: 30px;
+  font-size: initial;
+  transition: 1s ease;
+  transition-property: all;
+  background-image: url("images/events.jpg");
+}
+
+.about-service-div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -349,6 +373,12 @@ div.photo-container:hover {
 
 
 .about-div:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+  background-color: darkgoldenrod;
+}
+
+.about-service-div:hover {
   transform: scale(1.03);
   cursor: pointer;
   background-color: darkgoldenrod;
